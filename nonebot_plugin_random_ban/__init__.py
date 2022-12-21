@@ -15,8 +15,8 @@ help_text = f"""
 例如：/随机禁言 或 /随禁 10  
 
 随机禁言自己
-命令结构：/口球 [最大禁言时间] （最大禁言时间不填默认60分钟内的随机）  
-例如：/口球 或 /口球 10  
+命令结构：/口球 [最大禁言时间] 或 /禁我 [最大禁言时间] （最大禁言时间不填默认60分钟内的随机）  
+例如：/口球 或 /禁我 10  
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
@@ -60,7 +60,7 @@ async def send_msg(bot: Bot, event: GroupMessageEvent, msg: Message = CommandArg
     await catch_str.finish(Message(f'{msg}'), at_sender=True)
 
 
-catch_str2 = on_command('口球')
+catch_str2 = on_command('口球', aliases={"禁我"})
 
 
 @catch_str2.handle()
