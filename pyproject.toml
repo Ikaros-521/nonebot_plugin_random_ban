@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "nonebot-plugin-random_ban"
-version = "0.0.2"
-description = "随机禁言一名群员n分钟（n通过参入数字然后随机实现），简单粗暴。"
+version = "0.0.3"
+description = "随机禁言一名群员或自己n分钟（n通过参入数字然后随机实现），简单粗暴。"
 authors = ["Ikaros <327209194@qq.com>"]
 license = "MIT"
 readme = "README.md"
